@@ -1,0 +1,10 @@
+t = int(raw_input())
+while t:
+	t=t-1
+	n=int(raw_input())
+	j=0
+	pro=1
+	while n:
+		pro*=n
+		n=n-1
+	print "%d\n" % pro
