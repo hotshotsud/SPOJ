@@ -5,7 +5,7 @@
 #include <cmath>
 #include <algorithm>
 #include <queue>
-
+#include <cstring>
 using namespace std;
 
 #define ll long long int
@@ -18,14 +18,8 @@ ll dis[10002];
 void bfs(ll start)
 {
 	bool visited[node+1];
-	for(i=0;i<node+1;i++)
-	{
-		visited[i]=false;
-	}
-	for(i=0;i<node+1;i++)
-	{
-		dis[i]=0;
-	}
+	memset(visited,false,sizeof(visited));
+	memset(dis,0,sizeof(dis));
 	queue <ll> s;
 	s.push(start);
 	visited[start]=true;
