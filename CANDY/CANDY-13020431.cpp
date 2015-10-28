@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int N[10001],sum[10001],j,k,i,P[10001][10001],ans[10001];
 int main()
